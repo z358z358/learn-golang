@@ -42,9 +42,7 @@ func main() {
 	small := 0
 
 	for _, value := range xx {
-		if small == 0 {
-			small = value
-		} else if value < small {
+		if small == 0 || value < small {
 			small = value
 		}
 	}
